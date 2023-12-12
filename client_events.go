@@ -1,7 +1,7 @@
 package steam
 
 import (
-	"github.com/faceit/go-steam/netutil"
+	"github.com/dotabook/faceit-go-steam/netutil"
 )
 
 // When this event is emitted by the Client, the connection is automatically closed.

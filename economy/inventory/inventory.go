@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/faceit/go-steam/jsont"
+	"github.com/dotabook/faceit-go-steam/jsont"
 	"strconv"
 )
 

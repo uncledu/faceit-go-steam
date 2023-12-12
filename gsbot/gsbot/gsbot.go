@@ -3,17 +3,17 @@
 //
 // The command expects log on data, optionally with an auth code:
 //
-//     gsbot [username] [password]
-//     gsbot [username] [password] [authcode]
+//	gsbot [username] [password]
+//	gsbot [username] [password] [authcode]
 package main
 
 import (
 	"fmt"
 	"os"
 
-	"github.com/faceit/go-steam"
-	"github.com/faceit/go-steam/gsbot"
-	"github.com/faceit/go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam"
+	"github.com/dotabook/faceit-go-steam/gsbot"
+	"github.com/dotabook/faceit-go-steam/protocol/steamlang"
 )
 
 func main() {

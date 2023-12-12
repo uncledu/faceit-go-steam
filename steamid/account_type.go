@@ -1,7 +1,7 @@
 package steamid
 
 import (
-	"github.com/faceit/go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/protocol/steamlang"
 )
 
 // accountTypeChars maps account type to steam3 id chars.

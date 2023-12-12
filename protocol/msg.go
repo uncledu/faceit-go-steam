@@ -1,7 +1,7 @@
 package protocol
 
 import (
-	. "github.com/faceit/go-steam/protocol/steamlang"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
 	"github.com/golang/protobuf/proto"
 	"io"
 )

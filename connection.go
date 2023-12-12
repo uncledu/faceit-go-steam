@@ -9,8 +9,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/faceit/go-steam/cryptoutil"
-	. "github.com/faceit/go-steam/protocol"
+	"github.com/dotabook/faceit-go-steam/cryptoutil"
+	. "github.com/dotabook/faceit-go-steam/protocol"
 )
 
 type connection interface {

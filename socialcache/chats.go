@@ -2,16 +2,17 @@ package socialcache
 
 import (
 	"errors"
-	. "github.com/faceit/go-steam/protocol/steamlang"
-	"github.com/faceit/go-steam/steamid"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/steamid"
 	"sync"
 )
 
 // Chats list is a thread safe map
 // They can be iterated over like so:
-// 	for id, chat := range client.Social.Chats.GetCopy() {
-// 		log.Println(id, chat.Name)
-// 	}
+//
+//	for id, chat := range client.Social.Chats.GetCopy() {
+//		log.Println(id, chat.Name)
+//	}
 type ChatsList struct {
 	mutex sync.RWMutex
 	byId  map[steamid.SteamId]*Chat

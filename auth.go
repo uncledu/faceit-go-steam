@@ -5,10 +5,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	. "github.com/faceit/go-steam/protocol"
-	. "github.com/faceit/go-steam/protocol/protobuf"
-	. "github.com/faceit/go-steam/protocol/steamlang"
-	"github.com/faceit/go-steam/steamid"
+	. "github.com/dotabook/faceit-go-steam/protocol"
+	. "github.com/dotabook/faceit-go-steam/protocol/protobuf"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/steamid"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -40,7 +40,9 @@ type LogOnDetails struct {
 
 // Log on with the given details. You must always specify username and
 // password OR username and loginkey. For the first login, don't set an authcode or a hash and you'll
-//  receive an error (EResult_AccountLogonDenied)
+//
+//	receive an error (EResult_AccountLogonDenied)
+//
 // and Steam will send you an authcode. Then you have to login again, this time with the authcode.
 // Shortly after logging in, you'll receive a MachineAuthUpdateEvent with a hash which allows
 // you to login without using an authcode in the future.

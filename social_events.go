@@ -1,8 +1,8 @@
 package steam
 
 import (
-	. "github.com/faceit/go-steam/protocol/steamlang"
-	"github.com/faceit/go-steam/steamid"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/steamid"
 	"time"
 )
 

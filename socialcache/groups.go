@@ -2,16 +2,17 @@ package socialcache
 
 import (
 	"errors"
-	. "github.com/faceit/go-steam/protocol/steamlang"
-	"github.com/faceit/go-steam/steamid"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/steamid"
 	"sync"
 )
 
 // Groups list is a thread safe map
 // They can be iterated over like so:
-// 	for id, group := range client.Social.Groups.GetCopy() {
-// 		log.Println(id, group.Name)
-// 	}
+//
+//	for id, group := range client.Social.Groups.GetCopy() {
+//		log.Println(id, group.Name)
+//	}
 type GroupsList struct {
 	mutex sync.RWMutex
 	byId  map[steamid.SteamId]*Group
@@ -68,7 +69,7 @@ func (list *GroupsList) Count() int {
 	return len(list.byId)
 }
 
-//Setter methods
+// Setter methods
 func (list *GroupsList) SetName(id steamid.SteamId, name string) {
 	list.mutex.Lock()
 	defer list.mutex.Unlock()

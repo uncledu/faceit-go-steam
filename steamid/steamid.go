@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/faceit/go-steam/protocol/steamlang"
+	"github.com/dotabook/faceit-go-steam/protocol/steamlang"
 )
 
 // SteamId is a steam identifier.
@@ -153,7 +153,7 @@ func (s SteamId) ClanToChat() SteamId {
 	return s
 }
 
-//used to fix the Chat SteamId to a Clan SteamId
+// used to fix the Chat SteamId to a Clan SteamId
 func (s SteamId) ChatToClan() SteamId {
 	if s.GetAccountType() == steamlang.EAccountType_Chat { //EAccountType_Chat
 		s = s.SetAccountInstance(0)

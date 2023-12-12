@@ -1,9 +1,9 @@
 package steam
 
 import (
-	. "github.com/faceit/go-steam/protocol"
-	. "github.com/faceit/go-steam/protocol/protobuf"
-	. "github.com/faceit/go-steam/protocol/steamlang"
+	. "github.com/dotabook/faceit-go-steam/protocol"
+	. "github.com/dotabook/faceit-go-steam/protocol/protobuf"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
 	"github.com/golang/protobuf/proto"
 )
 

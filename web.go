@@ -6,15 +6,16 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
-	"github.com/faceit/go-steam/cryptoutil"
-	. "github.com/faceit/go-steam/protocol"
-	. "github.com/faceit/go-steam/protocol/protobuf"
-	. "github.com/faceit/go-steam/protocol/steamlang"
-	"github.com/golang/protobuf/proto"
 	"net/http"
 	"net/url"
 	"strconv"
 	"sync/atomic"
+
+	"github.com/dotabook/faceit-go-steam/cryptoutil"
+	. "github.com/dotabook/faceit-go-steam/protocol"
+	. "github.com/dotabook/faceit-go-steam/protocol/protobuf"
+	. "github.com/dotabook/faceit-go-steam/protocol/steamlang"
+	"github.com/golang/protobuf/proto"
 )
 
 type Web struct {
